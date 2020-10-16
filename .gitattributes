@@ -1,11 +1,7 @@
-$ cat .gitattributes
-public/* linguist-generated
-scot-ui/public/* linguist-generated
-
-$ github-linguist
-52.90%  HTML
-42.84%  JavaScript
-2.87%   Perl
-0.62%   CSS
-0.41%   Perl 6
-0.35%   Shell
+*.pl linguist-detectable=true
+*.js linguist-detectable=true
+*.html linguist-detectable=false
+*.htm inguist-detectable=false
+public/libs/* linguist-vendored
+scot-ui/public/libs/ linguist-vendored
+docs/* linguist-documentation
