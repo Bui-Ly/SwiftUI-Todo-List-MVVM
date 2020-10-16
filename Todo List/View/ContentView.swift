@@ -9,8 +9,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var viewModel = ViewModel()
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            VStack {
+                SortPickerView(viewModel: viewModel)
+                TodoListView(viewModel: viewModel)
+            }
+            .modifier(ContentViewModifier(viewModel: viewModel))
+        }
+      
     }
 }
 
