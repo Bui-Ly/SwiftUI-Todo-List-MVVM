@@ -2,7 +2,7 @@
 *.js linguist-detectable=true
 *.html linguist-detectable=false
 *.htm inguist-detectable=false
-*.* linguist-language=SwiftUI
+*.* linguist-language=Swift
 public/libs/* linguist-vendored
 scot-ui/public/libs/ linguist-vendored
 docs/* linguist-documentation
